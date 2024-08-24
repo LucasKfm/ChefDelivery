@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct StoresItemView: View {
+    let storeItem: StoreType
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(storeItem.logoImage)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50, height: 50)
+            Text(storeItem.name)
+                .font(.subheadline)
+            Spacer()
+        }
     }
 }
 
-#Preview {
-    StoresItemView()
+struct StoresItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        StoresItemView(storeItem: storesMock[0]).previewLayout(.sizeThatFits)
+    }
 }

@@ -1,5 +1,5 @@
 # Chef Delivery - Swift UI
-iOS Application developed using Swift UI
+A aplicação ChefDelivery é a simulação de um aplicativo de restaurantes para o sistema operacional iOS que utiliza a linguagem Swift e o framework SwiftUI.
 
 
 ## Screenshots
